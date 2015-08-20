@@ -21,11 +21,17 @@
     "url": "http://github.com/azer/relative-date.git"
   },
   "scripts": {
-    "test": "node test/node.js"
+    "test": "grunt nodeunit"
   },
   "component": {
     "scripts": {
       "relative-date": "./lib/relative-date"
     }
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0"
   }
 }

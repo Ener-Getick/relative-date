@@ -5,20 +5,20 @@
     <script src="test.js"></script>
     <script>
       var assert = {
-        'equal':function(){
-          if(arguments[0]!=arguments[1]){
-            throw new Error('Assertion Error: '+arguments[0]+'=='+arguments[1]);
+        equal: function(){
+          if(arguments[0] != arguments[1]){
+            throw new Error('Assertion Error: '+arguments[0]+' == '+arguments[1]);
           }
-        }
+        },
+        done: function() {}
       }
-      
+
       try {
-        test();
+        test(assert);
         alert('OK');
       } catch(exc){
         alert('FAIL');
       }
-      
     </script>
   </head>
 </html>
